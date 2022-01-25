@@ -1,0 +1,53 @@
+#vCenter login username- typically is administrator@vsphere.local
+vsphere_user          = "administrator@vsphere.local"
+
+#vCenter password
+vsphere_password      = ""
+
+#vCenter server DNS address
+vsphere_server        = ""
+
+#vCenter Datacenter name - default is "Datacenter"
+vsphere_datacenter    = ""
+
+#vSphere Resource Pool - use specific esxiservername/Resources if no pool specified
+vsphere_resource_pool = ""
+
+#vSphere cluster name.  If no cluster, leave blank
+vsphere_cluster       = ""
+
+#vSphere network/portgroup name.  Default is "VM Network"
+vsphere_network_portgroup = "VM Network"
+
+#Customized IP address for the built server
+vsphere_network_ipaddr    = ""
+
+#CIDR block number for the server - so for a 255.255.255.0 netmask, specify 24
+vsphere_network_cidr      = 24
+
+#Default Gateway IP for the server to use
+vsphere_network_gw        = ""
+
+#List of DNS servers to use in a list.  For example:  ["8.8.8.8", "8.8.4.4"]
+vsphere_network_dns       = ["8.8.8.8", "8.8.4.4"]
+
+#New VM Name which will display in vSphere/vCenter
+vsphere_vm_name     = ""
+
+#New VM local hostname
+vsphere_vm_hostname = ""
+
+#New VM domain name
+vsphere_vm_domain   = ""
+
+#Number of vCPU to allocate to the new VM
+vsphere_vm_cpucount = 8
+
+#Amount of memory to allocate to the new VM in MB
+vsphere_vm_memcount = 16384
+
+#Datastore to store the VM files on
+vsphere_datastore   = ""
+
+#Template name to use to clone the new VM from
+vsphere_vm_template_name = ""
